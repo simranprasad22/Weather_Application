@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Ubuntu:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("img/bg1.jpg");
+  min-height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h4 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.app-main {
+  min-height: 80vh;
+  width: 40vw;
+  margin: 5% auto;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  background: #3498db; /* Blue background color */
+  background: linear-gradient(to right, #3498db, #6dd5fa); /* Gradient for modern browsers */
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.input-box {
+  width: calc(100% - 30px);
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+  color: #2c3e50;
+  font-weight: 500;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  outline: none;
+  margin: 0 auto 20px;
+}
+
+.weather-body {
+  color: #fff;
+  padding: 20px;
+  line-height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  display: none;
+  background: linear-gradient(to top, #da1e4e, #e4603a);
+}
+
+.location-details {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.temp {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.min-max {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 15px;
+  color: #333;
+}
+
+.weather-details {
+  padding: 20px;
+  color: #333;
+}
+
+.detail-item {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .app-main {
+    width: 90%;
+    padding: 20px;
+  }
+}
